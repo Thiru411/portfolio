@@ -196,18 +196,8 @@ $application_folder = '../application';  // Adjust based on your directory struc
 		chdir(dirname(__FILE__));
 	}
 
-	if (($_temp = realpath($system_path)) !== FALSE)
-	{
-		$system_path = $_temp.DIRECTORY_SEPARATOR;
-	}
-	else
-	{
-		// Ensure there's a trailing slash
-		$system_path = strtr(
-			rtrim($system_path, '/\\'),
-			'/\\',
-			DIRECTORY_SEPARATOR.DIRECTORY_SEPARATOR
-		).DIRECTORY_SEPARATOR;
+	if (realpath($system_path) !== FALSE) {
+		$system_path = realpath($system_path);
 	}
 
 	// Is the system path correct?
