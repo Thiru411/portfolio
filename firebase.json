@@ -1,6 +1,6 @@
 {
     "hosting": {
-        "public": "public", // Point to your public directory
+        "public": "public", // Point this to your public directory (e.g., public/)
         "ignore": [
             "firebase.json",
             "**/.*",
