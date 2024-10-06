@@ -1,0 +1,64 @@
+[debug] [2024-10-06T14:42:01.177Z] ----------------------------------------------------------------------
+[debug] [2024-10-06T14:42:01.181Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Thiru\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-10-06T14:42:01.182Z] CLI Version:   13.20.2
+[debug] [2024-10-06T14:42:01.182Z] Platform:      win32
+[debug] [2024-10-06T14:42:01.182Z] Node Version:  v20.17.0
+[debug] [2024-10-06T14:42:01.182Z] Time:          Sun Oct 06 2024 20:12:01 GMT+0530 (India Standard Time)
+[debug] [2024-10-06T14:42:01.183Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-10-06T14:42:01.302Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-10-06T14:42:01.303Z] > authorizing via signed-in user (thirucshh411@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\xampp\htdocs\portfolio
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-10-06T14:42:07.970Z] Using project from CLI flag: thiru-freelencer
+[debug] [2024-10-06T14:42:07.972Z] Checked if tokens are valid: true, expires at: 1728227880808
+[debug] [2024-10-06T14:42:07.972Z] Checked if tokens are valid: true, expires at: 1728227880808
+[debug] [2024-10-06T14:42:07.974Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/thiru-freelencer [none]
+[debug] [2024-10-06T14:42:08.706Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/thiru-freelencer 200
+[debug] [2024-10-06T14:42:08.706Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/thiru-freelencer {"projectId":"thiru-freelencer","projectNumber":"1003388607991","displayName":"Thiru Freelencing","name":"projects/thiru-freelencer","resources":{"hostingSite":"thiru-freelencer"},"state":"ACTIVE","etag":"1_a92a3f03-0aea-45c9-bdeb-daf7ecd4c91c"}
+[info] i  Using project thiru-freelencer (Thiru Freelencing) 
+[info] 
+=== Hosting Setup
+[debug] [2024-10-06T14:42:08.755Z] Checked if tokens are valid: true, expires at: 1728227880808
+[debug] [2024-10-06T14:42:08.755Z] Checked if tokens are valid: true, expires at: 1728227880808
+[debug] [2024-10-06T14:42:08.755Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/thiru-freelencer [none]
+[debug] [2024-10-06T14:42:09.191Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/thiru-freelencer 200
+[debug] [2024-10-06T14:42:09.191Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/thiru-freelencer {"projectId":"thiru-freelencer","projectNumber":"1003388607991","displayName":"Thiru Freelencing","name":"projects/thiru-freelencer","resources":{"hostingSite":"thiru-freelencer"},"state":"ACTIVE","etag":"1_a92a3f03-0aea-45c9-bdeb-daf7ecd4c91c"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[info] +  Wrote public/404.html 
+[debug] [2024-10-06T14:42:43.898Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2024-10-06T14:42:44.269Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2024-10-06T14:42:44.270Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"10.14.0","browserURL":"https://www.gstatic.com/firebasejs/10.14.0/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/10.14.0/firebase.tgz"},"live":{"version":"10.14","browserURL":"https://www.gstatic.com/firebasejs/live/10.14/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/10.14/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/10.14.0/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/10.14.0/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/10.14.0/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/10.14.0/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/10.14.0/firebase-auth/cordova.js","auth/web-extension":"https://www.gstatic.com/firebasejs/10.14.0/firebase-auth/web-extension.js","functions":"https://www.gstatic.com/firebasejs/10.14.0/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/10.14.0/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/10.14.0/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/10.14.0/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/10.14.0/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/10.14.0/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/10.14.0/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/10.14.0/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/10.14.0/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/10.14.0/firebase-database.js","data-connect":"https://www.gstatic.com/firebasejs/10.14.0/firebase-data-connect.js","vertexai-preview":"https://www.gstatic.com/firebasejs/10.14.0/firebase-vertexai-preview.js","firestore.memory":"https://www.gstatic.com/firebasejs/10.14.0/firebase-firestore.memory.js"}}
+[info] +  Wrote public/index.html 
+[info] 
+[info] i  Detected a .git folder at D:\xampp\htdocs\portfolio 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=288190573&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
