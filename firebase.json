@@ -1,6 +1,6 @@
 {
     "hosting": {
-        "public": "public", // Directory where your index.php resides
+        "public": "public",
         "ignore": [
             "firebase.json",
             "**/.*",
@@ -8,7 +8,7 @@
         ],
         "rewrites": [{
             "source": "**",
-            "destination": "/index.php"
+            "function": "app"
         }]
     }
 }
