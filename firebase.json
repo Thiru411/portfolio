@@ -1,6 +1,6 @@
 {
     "hosting": {
-        "public": "public", // Ensure this points to your public folder
+        "public": "public", // Directory where your index.php resides
         "ignore": [
             "firebase.json",
             "**/.*",
