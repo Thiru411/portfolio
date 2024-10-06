@@ -1,10 +1,14 @@
 {
     "hosting": {
-        "public": "public", // Adjust this to your public directory
+        "public": "public", // Point to your public directory
         "ignore": [
             "firebase.json",
             "**/.*",
             "**/node_modules/**"
-        ]
+        ],
+        "rewrites": [{
+            "source": "**",
+            "destination": "/index.php"
+        }]
     }
 }
