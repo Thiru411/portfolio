@@ -1,0 +1,297 @@
+/* Reset styles and box sizing */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Body & Font Settings */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: #f0f4f8;
+    line-height: 1.6;
+}
+
+
+/* Container */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+/* Header Styles */
+
+header {
+    background-color: #00796b;
+    /* Deep teal color */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+header h1 {
+    font-size: 2.8em;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+header nav ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #004d40;
+    /* Darker teal on hover */
+}
+
+
+/* About Section */
+
+#about {
+    background-color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #00796b;
+}
+
+#about p {
+    font-size: 1.2em;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+}
+
+#about ul {
+    list-style: none;
+    margin: 20px 0;
+    padding: 0;
+    text-align: left;
+    display: inline-block;
+}
+
+#about ul li {
+    font-size: 1.1em;
+    padding: 10px 0;
+    color: #333;
+}
+
+
+/* Footer Styles */
+
+footer {
+    background-color: #00796b;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1em;
+    margin: 0;
+}
+
+
+/* Responsive Styles */
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.2em;
+    }
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    #about ul {
+        display: block;
+    }
+    footer p {
+        font-size: 0.9em;
+    }
+}
+
+
+/* Projects Section */
+
+#projects {
+    background-color: #fff;
+    /* White background for projects */
+    padding: 60px 0;
+}
+
+#projects h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #00796b;
+    /* Consistent header color */
+}
+
+.project {
+    background: #f9f9f9;
+    /* Light grey background for projects */
+    padding: 20px;
+    margin: 20px 0;
+    /* Spacing between projects */
+    border-radius: 8px;
+    /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+    transition: transform 0.3s;
+    /* Animation on hover */
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    /* Slight lift effect on hover */
+}
+
+.project h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #333;
+    /* Darker text for project titles */
+}
+
+.project p {
+    font-size: 1.1em;
+    color: #555;
+    /* Slightly lighter text for project descriptions */
+}
+
+.project a {
+    display: inline-block;
+    /* Make link a block */
+    margin-top: 10px;
+    /* Space above the link */
+    padding: 10px 15px;
+    /* Padding for link */
+    background-color: #00796b;
+    /* Button background */
+    color: #fff;
+    /* White text */
+    border-radius: 5px;
+    /* Rounded corners */
+    text-decoration: none;
+    /* No underline */
+    transition: background-color 0.3s;
+    /* Transition for hover */
+}
+
+.project a:hover {
+    background-color: #004d40;
+    /* Darker shade on hover */
+}
+
+#contact {
+    background-color: #f9f9f9;
+    /* Light background */
+    padding: 60px 0;
+    /* Top and bottom padding */
+    text-align: center;
+    /* Center-align content */
+    font-family: Arial, sans-serif;
+    /* Clean font style */
+}
+
+#contact h2 {
+    font-size: 2.5em;
+    /* Larger heading */
+    margin-bottom: 20px;
+    /* Spacing below the heading */
+    color: #333;
+    /* Darker text color */
+}
+
+#contact p {
+    font-size: 1.2em;
+    /* Slightly larger text for better readability */
+    color: #555;
+    /* Light gray text color */
+    margin-bottom: 30px;
+    /* Space between text and contact details */
+}
+
+#contact ul {
+    list-style-type: none;
+    /* Remove bullet points */
+    padding: 0;
+    /* Remove padding */
+    margin: 0 auto;
+    /* Center the ul */
+    max-width: 600px;
+    /* Limit width for smaller devices */
+}
+
+#contact ul li {
+    font-size: 1.1em;
+    /* Larger font size for better readability */
+    color: #333;
+    /* Text color */
+    margin-bottom: 15px;
+    /* Space between list items */
+}
+
+#contact ul li a {
+    color: #007BFF;
+    /* Blue color for links */
+    text-decoration: none;
+    /* Remove underline */
+    font-weight: bold;
+    /* Bold links */
+    transition: color 0.3s ease;
+    /* Smooth hover effect */
+}
+
+#contact ul li a:hover {
+    color: #0056b3;
+    /* Darker blue on hover */
+}
+
+#contact ul li strong {
+    color: #555;
+    /* Slightly lighter color for labels (Mobile, Email, etc.) */
+}
+
+@media (max-width: 768px) {
+    #contact h2 {
+        font-size: 2em;
+        /* Smaller font on mobile devices */
+    }
+    #contact ul li {
+        font-size: 1em;
+        /* Smaller text for better fit on mobile */
+    }
+}
