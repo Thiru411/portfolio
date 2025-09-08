@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thirumala B | Full-Stack Developer</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: "Roboto", sans-serif;
+        background: #f9f9f9;
+        color: #333;
+        line-height: 1.6;
+        scroll-behavior: smooth;
+      }
+
+      a {
+        text-decoration: none;
+      }
+      h2 {
+        color: #0a74da;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      /* Header / Hero */
+      header {
+        background: #0a74da;
+        color: #fff;
+        text-align: center;
+        padding: 80px 20px;
+      }
+      header h1 {
+        font-size: 3rem;
+        margin-bottom: 10px;
+      }
+      header p {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+      }
+      .header-buttons a {
+        display: inline-block;
+        background: #fff;
+        color: #0a74da;
+        padding: 12px 25px;
+        margin: 5px;
+        border-radius: 8px;
+        font-weight: bold;
+        transition: 0.3s;
+      }
+      .header-buttons a:hover {
+        background: #e6e6e6;
+      }
+
+      /* Sections */
+      section {
+        padding: 60px 20px;
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+
+      /* About Section */
+      .about {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+      .about img {
+        width: 200px;
+        border-radius: 50%;
+      }
+      .about p {
+        max-width: 600px;
+        font-size: 1rem;
+      }
+
+      /* Skills */
+      .skills {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+      }
+      .skill-card {
+        background: #fff;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+      }
+      .skill-name {
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+      .skill-bar {
+        height: 10px;
+        background: #ddd;
+        border-radius: 5px;
+        overflow: hidden;
+        margin-bottom: 10px;
+      }
+      .skill-fill {
+        height: 10px;
+        background: #0a74da;
+        width: 0;
+        transition: width 1.5s;
+      }
+
+      /* Projects */
+      .projects {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+      }
+      .project-card {
+        background: #fff;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s;
+      }
+      .project-card:hover {
+        transform: translateY(-5px);
+      }
+      .project-card h3 {
+        color: #0a74da;
+        margin-bottom: 10px;
+      }
+
+      /* Experience Timeline */
+      .timeline {
+        position: relative;
+        margin: 40px 0;
+        padding-left: 20px;
+      }
+      .timeline::before {
+        content: "";
+        position: absolute;
+        left: 15px;
+        top: 0;
+        bottom: 0;
+        width: 4px;
+        background: #0a74da;
+        border-radius: 2px;
+      }
+      .timeline-item {
+        position: relative;
+        margin-bottom: 30px;
+        padding-left: 30px;
+      }
+      .timeline-item::before {
+        content: "";
+        position: absolute;
+        left: -2px;
+        top: 5px;
+        width: 12px;
+        height: 12px;
+        background: #0a74da;
+        border-radius: 50%;
+      }
+      .timeline-item h3 {
+        margin-bottom: 5px;
+        color: #0a74da;
+      }
+
+      /* Contact */
+      .contact {
+        text-align: center;
+      }
+      .contact a {
+        display: inline-block;
+        margin: 10px;
+        padding: 12px 25px;
+        background: #0a74da;
+        color: #fff;
+        border-radius: 8px;
+        font-weight: bold;
+        transition: 0.3s;
+      }
+      .contact a:hover {
+        background: #065aa0;
+      }
+
+      /* Footer */
+      footer {
+        text-align: center;
+        padding: 20px;
+        background: #0a74da;
+        color: #fff;
+        margin-top: 20px;
+      }
+
+      /* Mobile */
+      @media (max-width: 600px) {
+        header h1 {
+          font-size: 2rem;
+        }
+        header p {
+          font-size: 1rem;
+        }
+        .about {
+          flex-direction: column;
+          text-align: center;
+        }
+        .skills {
+          grid-template-columns: 1fr;
+        }
+        .projects {
+          grid-template-columns: 1fr;
+        }
+        .timeline {
+          padding-left: 10px;
+        }
+        .timeline-item {
+          padding-left: 25px;
+        }
+        .timeline::before {
+          left: 10px;
+        }
+        .timeline-item::before {
+          left: -5px;
+        }
+        .contact a {
+          display: block;
+          width: 80%;
+          margin: 10px auto;
+          padding: 14px 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header / Hero -->
+    <header>
+      <h1>Thirumala B</h1>
+      <p>Full-Stack Developer | PHP, CodeIgniter, Node.js, React</p>
+      <div class="header-buttons">
+        <a href="mailto:thirucshh411@gmail.com">Email Me</a>
+        <a href="tel:+916362370286">Call / WhatsApp</a>
+      </div>
+    </header>
+
+    <!-- About -->
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="about">
+        <img src="https://via.placeholder.com/200" alt="Thirumala B" />
+        <p>
+          Hello! I am Thirumala, a Full-Stack Developer with experience in PHP,
+          CodeIgniter, Node.js, React, and Sequelize. I build modern, responsive
+          web applications with clean code and efficient design.
+        </p>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills">
+        <div class="skill-card">
+          <div class="skill-name">React</div>
+          <div class="skill-bar">
+            <div class="skill-fill" style="width: 90%"></div>
+          </div>
+          <div class="skill-name">HTML/CSS/JS</div>
+          <div class="skill-bar">
+            <div class="skill-fill" style="width: 95%"></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-name">Node.js</div>
+          <div class="skill-bar">
+            <div class="skill-fill" style="width: 85%"></div>
+          </div>
+          <div class="skill-name">PHP / CodeIgniter</div>
+          <div class="skill-bar">
+            <div class="skill-fill" style="width: 90%"></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-name">MySQL / PostgreSQL</div>
+          <div class="skill-bar">
+            <div class="skill-fill" style="width: 85%"></div>
+          </div>
+          <div class="skill-name">Sequelize</div>
+          <div class="skill-bar">
+            <div class="skill-fill" style="width: 80%"></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-name">API Development</div>
+          <div class="skill-bar">
+            <div class="skill-fill" style="width: 85%"></div>
+          </div>
+          <div class="skill-name">JSON & Microservices</div>
+          <div class="skill-bar">
+            <div class="skill-fill" style="width: 80%"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects">
+        <div class="project-card">
+          <h3>Personal Expense Tracker</h3>
+          <p>
+            Full-stack app to track income & expenses. Built with Node.js,
+            React, Sequelize.
+          </p>
+        </div>
+        <div class="project-card">
+          <h3>Bus Management System</h3>
+          <p>
+            Seat management, pickup points, filtering system using Node.js,
+            Sequelize, MySQL.
+          </p>
+        </div>
+        <div class="project-card">
+          <h3>Learning Objectives Module</h3>
+          <p>
+            CRUD operations with nested associations for educational content
+            using Node.js & PostgreSQL.
+          </p>
+        </div>
+        <div class="project-card">
+          <h3>Content Management Tasks</h3>
+          <p>
+            Video & infographic assignments, content filtering using PHP &
+            CodeIgniter.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h3>PHP Developer</h3>
+          <p>
+            3.9 years experience with PHP & CodeIgniter, backend APIs, database
+            management, content systems.
+          </p>
+        </div>
+        <div class="timeline-item">
+          <h3>Full-Stack Developer</h3>
+          <p>
+            Built Node.js + React applications including personal projects and
+            enterprise modules with Sequelize ORM.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+      <h2>Contact Me</h2>
+      <a href="mailto:thirucshh411@gmail.com">Email Me</a>
+      <a href="tel:+916362370286">Call / WhatsApp</a>
+      <a href="https://www.linkedin.com/in/your-linkedin" target="_blank"
+        >LinkedIn</a
+      >
+      <a href="https://github.com/your-github" target="_blank">GitHub</a>
+    </section>
+
+    <footer>&copy; 2025 Thirumala B | All rights reserved</footer>
+
+    <script>
+      // Animate skill bars
+      const skillFills = document.querySelectorAll(".skill-fill");
+      window.addEventListener("scroll", () => {
+        skillFills.forEach((bar) => {
+          if (bar.getBoundingClientRect().top < window.innerHeight) {
+            bar.style.width = bar.style.width;
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
